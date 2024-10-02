@@ -6,14 +6,14 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# get iris dataset and take a look at he first couple entries
+# get iris dataset and take a look at the first couple entries
 iris_dataset = sns.load_dataset('iris')
 print(iris_dataset.head())
 
 
 # quick visualization
 pairplot = sns.pairplot(iris_dataset, hue='species')
-# plt.show()
+plt.show()
 
 
 # convert from pandas dataframe to torch tensor 
