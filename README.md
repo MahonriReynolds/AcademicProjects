@@ -11,4 +11,4 @@ Example ANN
 
 
 C# Terminal Game
-![Terminal Game](https://github.com/MahonriReynolds/Portfolio/blob/main/other_projects/C#/TerminalGame/game.gif)
+![Terminal Game](https://github.com/MahonriReynolds/Portfolio/blob/main/other_projects/C%23/TerminalGame/game.gif)
