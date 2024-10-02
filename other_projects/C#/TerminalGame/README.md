@@ -9,7 +9,7 @@
 
 
 
-![Sneak peak](https://github.com/MahonriReynolds/cse210-hw/blob/main/final/FinalProject/final.gif)
+![Terminal Game](https://github.com/MahonriReynolds/Portfolio/blob/main/other_projects/C#/TerminalGame/game.gif)
 
 
 
