@@ -26,7 +26,7 @@ This is a 2D open world game that runs purely in the terminal using plain C#. Th
 
 ## Usage
 1. **Run the Game**:
-    - Run the project from your IDE.
+    - Run the project from your IDE. (You'll need to make the project yourself and then import the raw code files.)
 
 2. **Main Menu**:
     - **Start Game**: Begin a new game session.
