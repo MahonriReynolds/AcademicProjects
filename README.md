@@ -14,7 +14,7 @@ This repository includes projects ranging from machine learning models to open w
 
 Simply click on the project listed below to navigate to a brief overview of it. 
 
-All project source code can be directly navigated to from this root directory or from the project overview.
+All project source code can be directly navigated to from this root directory.
 
 
 ## Projects
