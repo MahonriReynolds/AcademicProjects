@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCWC Inventory Management</title>
+  <!-- internal css -->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- external css for sidebar icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+</head>
+<body> 
+    <!-- contains everything you see in the page -->
+    <div class="content-wrapper">
+
+      <!-- holds just the sidebar navigation links -->
+      <nav class="sidepanel">
+        <ul>
+          <li><a href="dashboard" id="dashboard-link"><i class="fa fa-tachometer-alt"></i>Dashboard</a></li>
+          <li><a href="purchase-report" id="purchase-report-link"><i class="fa fa-file-invoice"></i>Report Purchase</a></li>
+          <li><a href="usage-report" id="usage-report-link"><i class="fa fa-chart-line"></i>Report Usage</a></li>
+        </ul>
+      </nav>    
+
+      <!-- holds the main data content -->
+      <div class="main-content">
+        <!-- holds the bar charts -->
+        <div id="charts-section"><h1>Cumulative Purchase/Usage <em>Frequency</em></h1></div>
+
+        <!-- holds the alerts table -->
+        <div id="table-section"></div>
+      </div>
+
+    </div>
+
+    <!-- links too all the javascript needed on this page -->
+    <script src="scripts/Chart.min.js"></script>
+    <script src="scripts/chart.js"></script>
+    <script src="scripts/table.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
+

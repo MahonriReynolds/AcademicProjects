@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCWC Inventory Management</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- contains everything you see in the page -->
+    <div class="content-wrapper">
+
+        <!-- holds just the sidebar navigation links -->
+        <nav class="sidepanel">
+            <ul>
+              <li><a href="dashboard" id="dashboard-link"><i class="fa fa-tachometer-alt"></i>Dashboard</a></li>
+              <li><a href="purchase-report" id="purchase-report-link"><i class="fa fa-file-invoice"></i>Report Purchase</a></li>
+              <li><a href="usage-report" id="usage-report-link"><i class="fa fa-chart-line"></i>Report Usage</a></li>
+            </ul>
+        </nav>
+        
+        <!-- holds the main content -->
+        <div class="main-content">
+
+            <!-- holds the form -->
+            <div class="form-wrapper">
+                <h2>Report Purchases</h2>
+
+                <!-- this is the form itself -->
+                <form id="purchase-form">
+                    <!-- holds the items -->
+                    <div id="items-section"></div>
+                    <button type="button" id="add-item-btn">Add Another Item</button>
+                    <button type="submit" id="submit-btn">Submit Report</button>
+                </form>
+            </div>
+        </div>
+    </div>
+            
+    <!-- links too all the javascript needed on this page -->
+    <script src="scripts/report-purchase.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dbdbdb;
+  color: #dbdbdb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  color: #222;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header h2 {
+  font-weight: normal;
+  padding-left: 30px;
+}
+
+.content-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidepanel {
+  height: 100%;
+  width: 20%;
+  min-width: 180px;
+  max-width: 250px;
+  background: #dbdbdb;
+  border-right: 1px solid #444;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.sidepanel ul {
+  list-style: none;
+}
+
+.sidepanel li {
+  margin-bottom: 20px;
+}
+
+.sidepanel a {
+  color: #4289cf;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 16px;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.sidepanel a.active {
+  border: 4px solid #afcd6d;
+  background-color: #ffffff;
+  color: #222;
+  font-weight: bold;
+}
+
+.sidepanel a:hover {
+  background-color: #afcd6d;
+  color: #1a1a1a;
+  transform: translateX(5px);
+}
+
+.sidepanel a:active {
+  transform: translateX(3px);
+}
+
+.sidepanel a:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 186, 195, 0.6);
+}
+
+.sidepanel a::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: #afcd6d;
+  display: inline-block;
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.sidepanel a:hover::before {
+  visibility: visible;
+}
+
+.sidepanel a i {
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #f0f0f0;
+  display: flex;
+}
+
+#charts-section,
+#engagement-section {
+  background-color: #ffffff;
+  border: 1px solid #222;
+  border-radius: 8px;
+}
+
+#charts-section {
+  flex: 2;
+  display: block;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+#charts-section h1 {
+  color: #222;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+
+#charts-section canvas {
+  width: 100%;
+  margin-bottom: 20px;
+  display: block;
+  max-height: 300px !important; 
+}
+
+#table-section {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#table-section table {
+  border-collapse: collapse;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+#table-section th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #222;
+}
+
+#table-section th {
+  color: #ffffff;
+  font-size: large;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #74abd4 !important;
+  box-shadow: 0 -2px 0 #222, 0 2px 0 #222;
+}
+
+#table-section tr {
+  width: 90%;
+}
+
+#table-section tr:nth-child(odd) {
+  background-color: #dbdbdb;
+}
+
+#table-section tr:not(:first-child):hover {
+  background-color: #afcd6d;
+  border: 2px solid #222;
+}
+
+#table-section td {
+  font-size: 14px;
+  color: #222;
+}
+
+#table-section td, th {
+  text-align: center;
+}
+
+#table-section td.critical {
+  color: #f55d76;
+  font-weight: bold;
+}
+
+#table-section td.warning {
+  color: #f57925;
+  font-weight: bold;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 2px #222;
+  margin-top: 20px;
+}
+
+.form-wrapper h2 {
+  color: #222;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+#items-section .item-entry {
+  background-color: #dbdbdb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+#items-section .item-entry label {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 5px;
+  display: block;
+  width: 100%; 
+}
+
+#items-section .item-entry select,
+#items-section .item-entry input[type="date"] {
+  flex: 1;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #222;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#items-section .item-entry input[type="number"] {
+  flex: 0.5;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #222;
+  border: 1px solid #222;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+#items-section .item-entry span {
+  font-size: 14px;
+  color: #222;
+  margin-left: 5px;
+  align-self: center;
+}
+
+#items-section .item-entry select:focus,
+#items-section .item-entry input[type="date"]:focus {
+  border-color: #222;
+  outline: none;
+}
+
+#items-section .item-entry button {
+  padding: 8px 16px;
+  background-color: #f55d76;
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  align-self: flex-start;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+#items-section .item-entry button:hover {
+  background-color: #e53935;
+}
+
+#items-section .item-entry button:active {
+  background-color: #d32f2f;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #dbdbdb;
+  color: #4289cf;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #afcd6d;
+  color: #222;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .sidepanel {
+    width: 60px;
+  }
+
+  .form-wrapper {
+    padding: 15px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 20px;
+  }
+
+  select, input[type="date"], button {
+    font-size: 12px;
+  }
+
+  #add-item-btn, button[type="button"] {
+    font-size: 12px;
+  }
+
+  #items-section .item-entry {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
