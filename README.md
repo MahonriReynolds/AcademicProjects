@@ -42,6 +42,7 @@ Under Construction
 <br><br><br><br><br>
 
 ### Semi-Fullstack Inventory Management Dashboard 
+<img src="Semi-Fullstack-Inventory-Management-Dashboard/semi-fullstack-inventory-dashboard.png" alt="Inventory Dashboard" width="600"/>
 
 **Summary**: This is a web dashboard hosted on a FastAPI / Uvicorn Python backend. It integrates with an Airtable inventory system to provide data insights and streamlined actions on a webpage. I wrote this during my time volunteering at the Northern Colorado Wildlife center to let volunteers report inventory purchases / usages from different machines. 
   
