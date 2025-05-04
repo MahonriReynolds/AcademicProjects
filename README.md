@@ -158,6 +158,6 @@ Under Construction
 ### Withering ASCII Tree Hangman-like Game
 <img src="Withering-ASCII-Tree-Hangman-like-Game/tree.png" alt="ascii tree" width="600"/>
 
-**Summary**: This is a work in progress I occasionally come back to. I haven't dropped it yet because I like the concept. At the core, it's a simply hangman game. Except, it handles incorrect guesses by withering an ASCII tree. WHen the user guesses incorrectly, rnadom leaf characters are replaced to give the effect of the tree dying. 
+**Summary**: This is a work in progress I occasionally come back to. I haven't dropped it yet because I like the concept. At the core, it's a simply hangman game. Except, it handles incorrect guesses by withering an ASCII tree. When the user guesses incorrectly, random leaf characters are replaced to give the effect of the tree dying. 
 
 
