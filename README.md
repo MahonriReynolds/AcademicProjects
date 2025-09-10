@@ -1,6 +1,6 @@
 # Welcome!
 
-Thank you for visiting my portfolio repository.
+Thank you for visiting my academic repository.
 
 This collection showcases the various projects I have completed for volunteer positions, college courses, and personal learning / exploration. 
 
